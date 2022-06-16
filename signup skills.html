@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup skills</title>
+    <style>
+        #container{
+            margin: auto;
+          
+            width:40%;
+            height: 150%;
+             text-align: center;
+            padding-top: 100px;     
+            }
+            form{
+                color: white;
+                font-size: 20px;
+                
+            }
+        body{
+            background-color:black;
+            
+        }
+        
+            
+             .main{
+                border:1px solid white;
+                width:100%;
+             }
+                button{
+                    background-color: blue;
+                    color: white;
+                }
+            
+            
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img style="height:40px;padding-bottom:35px" src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png">  <br><br>  
+            <img src="https://app.pluralsight.com/id/img/login-logo.png"><br><br>
+         
+        </div>
+      
+   
+   <form>
+    <label for="email">Email or Username</label><br>
+    <input id="email"type="text"  name="email" required><br><br>
+
+    <label for="password">password</label><br>
+    <input id="password" type="text" name="password" required> <br><br>
+   
+    <button type="submit" class="signupbtn">Sign up</button> <br><br>
+
+     </form>
+</div>
+   
+</body>
+</html>
+<script>
+    let form = document.querySelector("form");
+  
+    let userData = JSON.parse(localStorage.getItem("userData")) || [];
+  
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      let data = {
+        
+        email: form.email.value,
+        password: form.password.value,
+      };
+      if (checkEmails(data.email) === true) {
+        userData.push(data);
+        localStorage.setItem("userData", JSON.stringify(userData));
+      } else {
+        alert("Signup Successfully");
+      }
+    });
+    function checkEmails(email) {
+      let filterd = userData.filter(function (element) {
+        return email === element.email;
+      });
+      if (filterd.length > 0) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+    </script>
