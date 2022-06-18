@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
     <style>
+        /* #prime{
+            background-color: black;
+            height: 100%;
+            width: 101%;
+        } */
         #main{
             height: 515px;
             width: 100%;
-            /* border: 1px solid red; */
+            /* border: 5px solid red; */
            background-color: black;
         }
         #btn1{
             color: white;
-            background-color: rgb(238, 13, 118);
+            /* background-color: rgb(238, 13, 118); */
+            background-image: linear-gradient(to right,#ef5230,#ed2463);
             margin-right: 20px;
             margin-bottom: 50px;
             padding: 20px 50px 20px 50px;
@@ -28,8 +34,7 @@
             display: flex;
             width: 100%;
             /* border: 1px solid red; */
-            height: 100px;
-           
+            height: 120px;
             background-color: black;
         }
         #h1{
@@ -57,7 +62,7 @@
         height: 1820px;
          width: 100%;
         border: 1px solid ;
-        margin-top: 70px;
+        margin-top: 44px;
         background-color: rgb(44, 41, 41);
         border-radius: 5px 5px 5px 5px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -81,7 +86,7 @@
           margin-right: 3%;
           margin-top: 20px;
           /* border: 1px solid rgb(189, 236, 17); */
-          width:40%;
+          width:45%;
       }
       #tag{
           margin-top: 45px;
@@ -143,14 +148,15 @@
            height: 150px;
            margin-left: 50px;
            margin-top: 45px;
-           background-color: rgb(252, 9, 179);
+           /* background-color: rgb(252, 9, 179); */
+           background-image: linear-gradient(to right,#ef5230,#ed2463);
        }
     #str3{
         /* border: 1px solid blue; */
         height: 50%;
         display: flex;
         margin-top: 40px;
-        background-color: rgb(252, 9, 179);
+        /* background-color: rgb(252, 9, 179); */
        }
    #d1{
         color: white;
@@ -451,9 +457,10 @@
     }
     #btn4{
         color: white;
-          border: 1px solid rgb(248, 7, 99) ;
-           background-color: rgb(248, 7, 99);
-            margin-left: 70px;
+        background-image: linear-gradient(to right,#ef5230,#ed2463);
+          border: transparent ;
+           /* background-color: rgb(248, 7, 99); */
+            margin-left: 60px;
             margin-right: 80px;
             padding: 25px 35px 35px 35px;
             height: 30px;
@@ -475,10 +482,10 @@
     #flip{
         display: flex;
         width: 100%;
-        height: 300px;
+        height: 400px;
         /* border: 1px solid blue; */
         margin-top: 25px;
-        margin-left: 25px;
+        /* margin-left: 25px; */
     }
     #fli{
         /* border: 1px solid red; */
@@ -489,7 +496,7 @@
         /* border: 1px solid red; */
         height: 400px;
         width: 55%;
-        margin-left: 90px;
+        margin-left: 190px;
         color: white;
     }
     #f1{
@@ -504,13 +511,13 @@
     #fl>h4{
         color: rgb(248, 7, 99);
     }
-    #fp{
-        /* border: 1px solid blue; */
+    /* #fp{
+        border: 1px solid blue;
         height: 400px;
         width: 5%;
         color: white;
-    }
-    #f2{
+     } */ 
+    /* #f2{
         
         margin-top: 70px;
         cursor: pointer;
@@ -542,7 +549,7 @@
     #f2e{
         cursor: pointer;
         margin-top: 2px;
-    }
+    } */
     #end{
         display: flex;
         /* border: 1px solid red; */
@@ -561,7 +568,7 @@
         /* border: 1px solid greenyellow; */
         height: 200px;
         width: 40%;
-        margin-left: 165px;
+        margin-left: 105px;
     }
     #mo{
         color: white;
@@ -570,6 +577,10 @@
     #mb{
         color: white;
         text-align: center;
+    }
+    #mobs{
+        border: 0.01px solid floralwhite;
+        margin-left: 55px;
     }
     #btn6{
         color: white;
@@ -582,7 +593,9 @@
     }
     #btn6a{
         color: white;
-        background-color: rgb(248, 7, 99);
+        border: transparent;
+        /* background-color: rgb(248, 7, 99); */
+        background-image: linear-gradient(to right,#ef5230,#ed2463);
         margin-left: 45px;
         height: 45px;
         cursor: pointer;
@@ -591,28 +604,64 @@
         color: white;
           border: 1px solid white ;
            background-color: rgb(37, 37, 37);
-            margin-left: 80px;
-            margin-right: 100px;
-            padding: 10px 5px 10px 5px; 
+            margin-left: 45px;
+            margin-right: 65px;
+            padding: 10px 5px 10px 15px; 
             cursor: pointer;
     }
     #btn7a{
         color: white;
-        margin-left: 20px;
+        margin-left: 30px;
         height: 40px;
         background-color: rgb(37, 37, 37);
         cursor: pointer;
     }
+ .collapsible {
+  background-color: rgb(37, 37, 37);
+  color: white;
+  cursor: pointer;
+  /* padding: 10px; */
+  width: 100%;
+  border: transparent;
+  text-align: left;
+  outline: none;
+  font-size: 12px;
+  margin-left: 70px;
+  margin-top: 30px;
+
+   }
+   .active, .collapsible:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 75px;
+}
+
+.active:after {
+  content: "\2212";
+}
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: rgb(37, 37, 37);
+}
 
 
        
     </style>
 </head>
 <body>
+<div id="prime">
+ <div id="main">
 <div>
-   <div id="main">
-<div>
-    <img src="https://pbs.twimg.com/media/FVTeakfaQAINaOB?format=jpg&name=large" alt="">
+    <img style="width: 100%;" src="https://pbs.twimg.com/media/FVTeakfaQAINaOB?format=jpg&name=large" alt="">
     <div id = "btn1a"><button id="btn1">TRY FOR FREE</button></div>
 </div>
 <div id="lib">
@@ -898,25 +947,32 @@
               </div>
             </div>
             <div id="flp">
-                <div id="f1"> <h2>Will I be charged now for the Pluralsight Skills professional team free trial?</h2></div>
-               <div id="f1b"><h2>Do you offer a pilot for Pluralsight Skills enterprise business plans?</h2></div>
-               <div id="f1c"><h2>What's the cost of a Pluralsight Skills business plan?</h2></div>
-               <div id="f1d"><h2>How many licenses should I purchase for my plan?</h2></div>
-               <div id="f1e"><h2>Do you offer volume pricing?</h2></div>
+                <button class="collapsible"><h2>Will I be charged now for the Pluralsight Skills professional team free trial?</h2></button>
+                <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="collapsible"><h2>Do you offer a pilot for Pluralsight Skills enterprise business plans?</h2></button>
+                <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="collapsible"><h2>What's the cost of a Pluralsight Skills business plan?</h2></button>
+                <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="collapsible"><h2>Do you offer volume pricing?</h2></button>
+                <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+             </div>
             </div>
-            <div id="fp">
-                <div id="f2"><h2>+</h2></div>
-                <div id="f2b"> <h2>+</h2></div>
-                <div id="f2c"><h2>+</h2></div>
-                <div id="f2d"><h2>+</h2></div>
-                <div id="f2e"><h2>+</h2></div>
-            </div>
-        </div>
-        <div id="end">
+         <div id="end">
             <div id="mob">
                 <div id="mo"><h2>Power the people who
                     power your product</h2></div>
                   <div id="btn6"><button id="btn6a">TRY FOR FREE</button></div>  
+            </div>
+            <div id="mobs">
+                <div></div>
             </div>
             <div id="mobb">
                 <div id="mb"><h2>Are you an individual
@@ -926,5 +982,21 @@
         </div>
  </div>
 </div>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 </body>
 </html>
