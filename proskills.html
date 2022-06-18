@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        #main{
+            height: 515px;
+            width: 100%;
+            /* border: 1px solid red; */
+           background-color: black;
+        }
+        #btn1{
+            color: white;
+            background-color: rgb(238, 13, 118);
+            margin-right: 20px;
+            margin-bottom: 50px;
+            padding: 20px 50px 20px 50px;
+            cursor: pointer;
+        }
+       #btn1a {
+            margin-top: -65px;
+            margin-left: 50px;
+        }
+        #lib{
+            display: flex;
+            width: 100%;
+            /* border: 1px solid red; */
+            height: 100px;
+           
+            background-color: black;
+        }
+        #h1{
+            color: white;
+            margin: auto;
+            cursor: pointer;
+        }
+      #h2{
+          color: white;
+          margin: auto;
+          cursor: pointer;
+      }
+      #h3{
+          color: white;
+          margin: auto;
+          cursor: pointer;
+      }
+      #h4{
+          color: white;
+          margin: auto;
+          cursor: pointer;
+      }
+      #main2{
+         
+        height: 1820px;
+         width: 100%;
+        border: 1px solid ;
+        margin-top: 70px;
+        background-color: rgb(44, 41, 41);
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      /* #main2>div{
+         
+          border: 1px solid black;
+      } */
+      #main2>div>h4{
+         margin-top: 40px;
+         text-align: center;
+          color: rgb(252, 9, 179);
+      }
+      #main2>div>h1{
+          text-align: center;
+          color: white;
+      }
+      #js{
+         height: 590px;
+          margin-left:5%;
+          margin-right: 3%;
+          margin-top: 20px;
+          /* border: 1px solid rgb(189, 236, 17); */
+          width:40%;
+      }
+      #tag{
+          margin-top: 45px;
+          color: white;
+      }
+      #tag>h3{
+        color: white;
+      }
+      #main2>#cl{
+        width: 40%;
+        height: 550px;
+        /* border: 1px solid red; */
+        margin-left:70px;  
+      }
+      #str{
+          display: flex;
+         margin-left: 20px;
+         
+      }
+      #str2{
+         display: flex;
+      }
+      #cl>div{
+          width: 95%;
+          height: 550 px;
+          /* border: 1px solid greenyellow; */
+          margin-top: 20px;
+          margin-left: 10px;
+      }
+
+      #cl>div>h4{
+          color:  rgb(252, 9, 179);
+      }
+       #cl>div>h1{
+           color: white;
+       }
+       #cl>div>p{
+           color: white;
+       }
+       #sm{
+           color: white;
+           margin-right: 50px;
+           width: 40%;
+           height: 200px;
+           /* border: 1px solid greenyellow; */
+       }
+       #al{
+         color: white;
+          width: 40%;
+           height: 200px;
+           /* border: 1px solid greenyellow;  */
+       }
+       #tag2{
+           color: white;
+       }
+       #main2>#co{
+           /* border: 1px solid greenyellow; */
+           width: 90%;
+           height: 150px;
+           margin-left: 50px;
+           margin-top: 45px;
+           background-color: rgb(252, 9, 179);
+       }
+    #str3{
+        /* border: 1px solid blue; */
+        height: 50%;
+        display: flex;
+        margin-top: 40px;
+        background-color: rgb(252, 9, 179);
+       }
+   #d1{
+        color: white;
+       /* border: 1px solid red; */
+       height: 65px;
+       margin-left: 40px;
+      width: 60%;
+      margin-top: 45px;
+
+    }
+    #btn2{
+        /* border: 1px solid red; */
+           background-color: black;
+            margin-left: 100px;
+            margin-bottom: 0px;
+            padding: 20px 10px 5px 10px;
+            height: 40px;
+            margin-top: 46px;
+           
+    }
+    #btn2>#btn2b{
+        background-color: black;
+        color: white;
+       cursor: pointer
+    }
+   #main2>#tsk{
+        /* border: 1px solid blue; */
+        width: 60%;
+        height: 200px;
+        margin-top: 5%;
+       margin-left: 260px;
+    }
+    #tsk>div>h3{
+        color: rgb(252, 9, 179);
+        text-align: center;
+    }
+    #tsk>div>h1{
+        color: white;
+        text-align: center;
+    }
+    #tsk>div>h4{
+        color: white;
+        text-align: center;
+    }
+    #sixd{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+       margin-left: 5%;
+       margin-right: 5%;
+       cursor: pointer;
+    }
+    #sixd>div{
+        height: 210px;
+        /* border: 1px solid greenyellow; */
+        text-align: center;
+        color: white;
+        background-color: rgb(70, 65, 65);
+        border-radius: 5px 10px 10px 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    #sir{
+        display: flex;
+    }
+    #si{
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 65px;
+    }
+    #sri{
+        display: flex;
+    }
+    #sr{
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 65px; 
+    }
+    #dir{
+        display: flex;
+    }
+    #dr{
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 65px; 
+    }
+    #bir{
+        display: flex;
+    }
+    #br{
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 65px; 
+    }
+    #fer{
+        display: flex;
+    }
+    #fr{
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 125px;  
+    }
+    #ana{
+        display: flex;
+    }
+    #an{
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-left: 115px; 
+    }
+
+    #main2>#sst{
+        height: 150px;
+        width: 80%;
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 10%;
+    }
+    #sst>div>h4{
+        color: white;
+    }
+   #main2>#sst>#st{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        height: 60px;
+        margin-top: 20px;
+    }
+    #main3{ 
+        height: 800px;
+        width: 100%;
+        border: 1px solid rgb(4, 4, 73);
+        background-color: rgb(224, 16, 68);
+    }
+    #main3>div>h1{
+        color: white;
+        text-align: center;
+        margin-top: 70px;
+        cursor: pointer;
+    }
+    #main3>div>h4{
+        width: 75%;
+        text-align: center;
+        margin-left: 10%;
+    }
+    #main3>#sd{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+    #main3>#sd>div{
+        /* border: 1px solid greenyellow; */
+        height: 250px;
+    }
+    #mm>div>#mt{
+        width: 180px;
+        height: 140px;
+        margin-left: 75px;
+       
+    }
+    #mm>div>p{
+        text-align: center;
+    }
+    #ss>div>#sn{
+        width: 180px;
+        height: 140px;
+        margin-left: 75px;
+    }
+    #ss>div>p{
+        text-align: center;
+    }
+    #rr>div>#rr1{
+        width: 200px;
+        height: 140px;
+        margin-left: 65px;
+    }
+    #rr>div>p{
+        text-align: center;
+    }
+    #sr>div>#sr1{
+        width: 140px;
+        height: 110px;
+        margin-left: 85px;
+    }
+    #sr>div>p{
+        text-align: center;
+    }
+    #tr>div>#tr1{
+        width: 140px;
+        height: 110px;
+        margin-left: 90px;
+    }
+    #tr>div>p{
+        text-align: center;
+        margin-top: 45px;
+    }
+    #er>div>#er1{
+        width: 120px;
+        height: 100px;
+        margin-left: 95px;
+    }
+    #er>div>p{
+        margin-top: 47px;
+        text-align: center;
+    }
+    #tmt{
+        height: 50px;
+        width: 25%;
+        margin-left: 550px;
+    }
+    #main4{
+        width: 100%;
+        height: 300px;
+        /* border: 1px solid red; */
+        background-color: black;
+    }
+    #main4>#scr{
+        display: flex;
+        width: 80%;
+        height: 325px;
+        margin-left: 120px;
+    }
+    #scr>div#tru{
+        height: 320px;
+        width: 50%;
+    }
+    #tru>div>#ds{
+        margin-top: 75px;
+        margin-left: 10px;
+    }
+    #tru>#nmm>h2{
+        color: white;
+        text-align: center;
+    }
+    #scr>#try{
+        height: 320px;
+        width: 40%;
+        margin-left: 75px;
+    }
+    #try>div>#dd{
+        margin-top: 120px;
+        height: 20px;
+    }
+    #try>div>h4{
+        color: white;
+    }
+    #try>div>#bn>h3{
+        color: white;
+        margin-top: 35px;
+        cursor: pointer;
+    }
+    #main5{
+
+        width: 100%;
+        height: 1400px;
+        border: 2px solid rgb(37, 37, 37);
+        background-color: rgb(37, 37, 37);
+    }
+    #txxt{
+        /* border: 1px solid red; */
+        width: 50%;
+        height: 100px;
+        margin-left: 25%;
+    }
+    #txxt>h4{
+        color:  rgb(252, 9, 179);
+        text-align: center;
+    }
+    #txxt>h1{
+        color: white;
+        text-align: center;
+    }
+    #xxt{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+    #xxt>div{
+        /* border: 1px solid greenyellow; */
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    #samm{
+        color: white;
+        text-align: center;
+    }
+    #sam{
+        display: flex;
+    }
+    #sa{
+        margin-left: 120px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+    #btn4{
+        color: white;
+          border: 1px solid rgb(248, 7, 99) ;
+           background-color: rgb(248, 7, 99);
+            margin-left: 70px;
+            margin-right: 80px;
+            padding: 25px 35px 35px 35px;
+            height: 30px;
+            cursor: pointer;
+    }
+    #tubb{
+        color: white;
+        text-align: center;
+    }
+    #spk{
+        color: white;
+        text-align: center;
+    }
+    #prnt{
+        color: whitesmoke;
+        text-align: center;
+        margin-top: 55px;
+    }
+    #flip{
+        display: flex;
+        width: 100%;
+        height: 300px;
+        /* border: 1px solid blue; */
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    #fli{
+        /* border: 1px solid red; */
+        height: 400px;
+        width: 20%;
+    }
+    #flp{
+        /* border: 1px solid red; */
+        height: 400px;
+        width: 55%;
+        margin-left: 90px;
+        color: white;
+    }
+    #f1{
+        margin-top: 65px;
+        cursor: pointer;
+    }
+    #fl{
+        color: white;
+        text-align: center;
+        margin-top: 55px;
+    }
+    #fl>h4{
+        color: rgb(248, 7, 99);
+    }
+    #fp{
+        /* border: 1px solid blue; */
+        height: 400px;
+        width: 5%;
+        color: white;
+    }
+    #f2{
+        
+        margin-top: 70px;
+        cursor: pointer;
+    }
+    #f1b{
+        cursor: pointer;
+    }
+    #f2b{
+        margin-top: 45px;
+        cursor: pointer;
+    }
+    #f1c{
+        cursor: pointer;
+    }
+    #f2c{
+        cursor: pointer;
+        margin-top: 2px;
+    }
+    #f1d{
+        cursor: pointer;
+    }
+    #f2d{
+      cursor: pointer;
+        margin-top: 2px;
+    }
+    #f1e{
+        cursor: pointer;
+    }
+    #f2e{
+        cursor: pointer;
+        margin-top: 2px;
+    }
+    #end{
+        display: flex;
+        /* border: 1px solid red; */
+        height: 200px;
+        width: 75%;
+        margin-left: 190px;
+        margin-top: 150px;
+    }
+    #mob{
+        /* border: 1px solid greenyellow; */
+        height: 200px;
+        width: 40%;
+
+    }
+    #mobb{
+        /* border: 1px solid greenyellow; */
+        height: 200px;
+        width: 40%;
+        margin-left: 165px;
+    }
+    #mo{
+        color: white;
+        text-align: center;
+    }
+    #mb{
+        color: white;
+        text-align: center;
+    }
+    #btn6{
+        color: white;
+          /* border: 1px solid rgb(248, 7, 99) ; */
+           background-color: rgb(37, 37, 37);
+            margin-left: 80px;
+            margin-right: 100px;
+            padding: 10px 5px 10px 5px;    
+            /* padding: 20px 50px 20px 50px; */
+    }
+    #btn6a{
+        color: white;
+        background-color: rgb(248, 7, 99);
+        margin-left: 45px;
+        height: 45px;
+        cursor: pointer;
+    }
+    #btn7{
+        color: white;
+          border: 1px solid white ;
+           background-color: rgb(37, 37, 37);
+            margin-left: 80px;
+            margin-right: 100px;
+            padding: 10px 5px 10px 5px; 
+            cursor: pointer;
+    }
+    #btn7a{
+        color: white;
+        margin-left: 20px;
+        height: 40px;
+        background-color: rgb(37, 37, 37);
+        cursor: pointer;
+    }
+
+
+       
+    </style>
+</head>
+<body>
+<div>
+   <div id="main">
+<div>
+    <img src="https://pbs.twimg.com/media/FVTeakfaQAINaOB?format=jpg&name=large" alt="">
+    <div id = "btn1a"><button id="btn1">TRY FOR FREE</button></div>
+</div>
+<div id="lib">
+<div id="h1">
+    <h5>COURSE LIBRARY</h5>
+</div>
+<div id="h2">
+<h5>SKILLS FEATURES</h5>
+</div>
+<div id="h3">
+    <h5>ROI</h5>
+</div>
+<div id="h4">
+    <h5>PRICING</h5>
+</div>
+</div>
+</div>
+<div id="main2">
+    <div>
+        <h4>THE TECHNOLOGY SKILLS PLATFORM</h4>
+        <h1>Empower employees to build their skills</h1>
+    </div>
+      <div id="str">
+        <div id="js">
+            <img src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_copy/column-parsys-1/generic_block_copy_c/parsys/image/image-res.img.344032d8-90ae-46d8-875d-ca8374e4c28b.png" alt="">
+           <div id="tag">
+            <h1>Compare our libraries</h1>
+            <h2>Core library</h2>
+            <p>Our core library features 2,500+ of our most-popular courses on in-demand topics like cloud, data, security, software development, infrastructure and more.</p>
+           <h3>*Available in our starter plan</h3>
+           </div> 
+        </div>
+           <div id="cl">
+               <div>
+                   <h4>COURSE LIBRARY</h4>
+                   <h1>Feel confident your team is learning from the industry’s best</h1>
+                   <p>Upskill your team with courses on the most in-demand technology topics, taught by the experts who know them best.</p>
+              <div id="str2">
+                <div id="sm">
+                    <p>Software Development</p>
+                    <p>Machine Learning & AI</p>
+                    <p>IT Ops</p>
+                 </div>
+                
+                <div id="al">
+                    <p>Data Professional</p>
+                    <p>Information & Cybersecurity</p>
+                    <p>Cloud computing</p>
+                </div>
+              </div>
+              <div id="tag2">
+                <h1>Expanded library</h1>
+                <p>Our expanded library gives you access to our full 7,000+ course library. It includes more advanced topics if you need to build deep expertise and niche topics for those tackling special projects.</p>
+                <h3>*Available in our professional and enterprise plans</h3>
+            </div>
+             </div>
+
+           </div>
+      </div>
+    <div id="co">
+        <div id="str3">
+           <div id="d1">
+               <h2>Explore our expansive library of expert-authored courses</h2>
+            </div>
+            <div id="btn2">
+                <button id="btn2b">BROWSE OUR COURSE LIBRARIES</button>
+            </div>
+        </div>    
+    </div>
+    <div id="tsk">
+        <div>
+            <h3>FEATURES OF SKILLS</h3>
+            <h1>Tools to help your team grow</h1>
+            <h4>Give your team a trusted skill development solution that allows them to build in-demand skills in a way that’s personalized to their current knowledge and preferred way to learn.</h4>
+        </div>
+    </div>
+    <div id="sixd">
+        <div id="sdd">
+          <div id="sir">
+            <div id="si">
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/hand.png" alt="">   
+            </div>
+            <div><h2>Hands-on learning</h2></div>
+          </div>
+            <h4>Upskill with interactive courses,projects,labs, and practice what you've learned with sandboxes.</h4>
+            <h3>Learn more ></h3>
+        </div>
+        <div>
+            <div id="sri">
+                <div id="sr">
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/iq.png" alt="">
+                </div>
+               <div><h2>Skill assessments</h2></div> 
+            </div>
+            <h4>Get personalized recommendations for where to start and continue learning with our assessments.</h4>
+            <h3>Learn more ></h3>
+        </div>
+        <div>
+            <div id="dir">
+                <div id="dr">
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/play-circle-filled.png" alt="">
+                </div>
+                <div> <h2>Instructor-led training</h2></div>
+            </div>
+            <h4>Our experts create and administer a custom skill development plan for your entire team.</h4>
+            <h3>Learn more ></h3>
+        </div>
+        <div >
+            <div id="bir">
+                <div id="br">
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/certifications.png" alt="">
+                </div>
+                <div> <h2>Certification content</h2></div>
+            </div>
+            <h4>Access courses and paths that are aligned with and help you prepare for industry Certifications.</h4>
+            <h3>Learn more ></h3>
+        </div>
+        <div>
+            <div id="fer">
+                <div id="fr">
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/path.png" alt="">
+                </div>
+                <div><h2>Paths</h2></div>
+            </div>
+            <h4>Learning material curated by experts to help your team build the right skills in the right order.</h4>
+            <h3>Learn more ></h3>
+        </div>
+        <div>
+            <div id="ana">
+                <div id="an">
+                    <img src="https://www.pluralsight.com/content/dam/pluralsight2/product/skills/icons/analytics.png" alt="">
+                </div>
+                <div><h2>Analytics</h2></div>
+            </div>
+            <h4>Get the insights you need to align skill development to your objectives.</h4>
+            <h3>Learn more ></h3>
+        </div>
+    </div>
+    <div id="sst">
+     <div><h4>HELPING THOUSANDS OF ORGANIZATIONS BUILD TECH SKILLS AT SCALE</h4></div>
+     <div id="st">
+        <div><img src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-1/animation_wrapper/parsys/image_1399077451/image-res.img.00663542-bc31-40ff-9fbc-6ef6de19e20a.png" alt=""></div>
+        <div><img src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-2/animation_wrapper/parsys/image/image-res.img.d5a3842d-9799-4ca1-8ef3-db08a3d917aa.png" alt=""></div>
+        <div><img src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-3/animation_wrapper/parsys/image/image-res.img.b60ba052-d5af-4e23-9078-168bfee8538d.png" alt=""></div>
+        <div><img src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-4/animation_wrapper/parsys/image/image-res.img.ae1f3565-2030-4c1a-b641-54d1bb670813.png" alt=""></div>
+        <div><img src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_copy/parsys/generic_block_413530/parsys/animation_wrapper/parsys/columns_copy/column-parsys-1/generic_block_202764/parsys/columns_1110011315_c/column-parsys-1/generic_block/parsys/column_control/column-parsys-5/animation_wrapper/parsys/image/image-res.img.92022a3c-d75d-4cfe-bff4-3708de2e7baf.png" alt=""></div>
+     </div>
+    </div>
+
+
+</div>
+<div id="main3">
+<div>
+    <h1>See an immediate ROI</h1>
+</div>
+<div>
+    <h4>Help everyone in your organization reach their full potential. By prioritizing technology skill development, your technologists will grow in their careers and your business will achieve better outcomes.</h4>
+ </div>
+ <div id="sd">
+     <div id="mm">
+          <div>
+            <img id="mt" src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control/column-parsys-1/image/image-res.img.feaf3de6-cec3-45a9-95d4-ac503c0a7c66.png" alt="">
+          </div>
+          <div>
+            <p>93% of surveyed organizations realized a return on their investment within 6-12 months of implementing Pluralsight</p>
+          </div>
+     </div>
+     <div id="ss">
+         <div>
+            <img id="sn" src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control/column-parsys-2/image/image-res.img.311b99ae-5a45-4659-9c96-e9de2bd7aec7.png" alt="">
+         </div>
+         <div>
+             <p>96% of surveyed organizations are likely to recommend Pluralsight</p>
+         </div>
+     </div>
+     <div id="rr">
+       <div>
+           <img id="rr1" src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control/column-parsys-3/image/image-res.img.ab2edd67-877a-4794-b56f-3a166f810e5b.png" alt="">
+       </div>
+       <div>
+           <p>Over half of surveyed organizations confirmed that Pluralsight has enabled them to save time and money</p>
+       </div>
+     </div>
+     <div id="sr">
+         <div>
+             <img id="sr1" src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control_copy/column-parsys-1/image/image-res.img.4f234eb3-dd4c-40b6-9e83-4096c5b38d4b.png" alt="">
+         </div>
+         <div>
+             <p>Providing skill development resources to your employees increases retention and keeps employees engaged</p>
+         </div>
+     </div>
+     <div id="tr">
+         <div>
+             <img id="tr1" src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control_copy/column-parsys-2/image/image-res.img.5667d462-0234-4806-a9dd-7d14f015f4cf.png" alt="">
+         </div>
+          <div>
+             <p>Tools like Pluralsight enable objective career development discussions and guide employees into future roles</p>
+          </div>
+      </div>
+       <div id="er">
+          <div>
+              <img id="er1" src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/animation_wrapper_co/parsys/generic_block_378108/parsys/generic_block_134198/parsys/animation_wrapper/parsys/columns/column-parsys-1/generic_block/parsys/column_control_copy/column-parsys-3/image/image-res.img.0fb7a212-204c-4e4d-9560-cbf6e4d7b65c.png" alt="">
+          </div>
+          <div>
+              <p>A culture of learning encourages employees to grow and learn from one another, making the whole business better</p>
+          </div>
+      </div>
+ </div>
+ <div id="tmt">
+    <div><h4>*TechValidate Survey, 2020</h4></div>
+</div>
+</div>
+<div id="main4">
+    <div id="scr">
+        <div id="tru">
+            <div>
+                <img id="ds" src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_740207/parsys/columns/column-parsys-1/animation_wrapper/parsys/image/image-res.img.068d723d-b02e-4c8f-aa42-f00dc6c400ea.png" alt="">
+            </div>
+            <div id="nmm">
+                <h2>...self-service learning" -the ability to develop employee skills anytime, and from anywhere. It's not hard to see why.</h2>
+            </div>
+        </div>
+        <div id="try">
+            <div>
+                <img id="dd" src="https://www.pluralsight.com/content/pluralsight/en/product/skills/jcr:content/main/generic_block_740207/parsys/columns/column-parsys-2/animation_wrapper/parsys/image_copy/image-res.img.186b7c4e-31dc-4667-9ce5-51dfd6502693.png" alt="">
+            </div>
+           <div>
+               <h4>Tamera Scholz - Sr. Director of Technical Education</h4>
+              <div id="bn">
+                <h3>Watch the full story ></h3>
+              </div> 
+           </div>
+        </div>
+    </div>
+</div>
+<div id="main5">
+    <div id="txxt">
+        <h4>PLANS & PRICING</h4>
+        <h1>Build skills that deliver results</h1>
+    </div>
+    <div id="xxt">
+        <div id="samm">
+            <h1>Starter</h1>
+            <div id="sam">
+                <div id="sa"><h3>US$</h3></div>
+                <div><h1>399</h1></div>
+            </div>
+            <p>per user / year</p>
+            <h4>Upskill your team with our core library.</h4>
+                <div><button id="btn4">GET STARTED</button></div>
+        </div>
+        
+        <div id="tubb">
+            <h1>Professional</h1>
+            <div id="sam">
+                <div id="sa"><h3>US$</h3></div>
+                <div><h1>599</h1></div>
+            </div>
+            <p>per user / year</p>
+            <h4>Basic reporting and user
+                analytics for teams.</h4>
+             <div><button id="btn4">GET STARTED</button></div>
+        </div>
+        <div id="spk"> 
+            <h1>Enterprise</h1>
+            <div id="sam">
+                <div id="sa"><h3>US$</h3></div>
+                <div><h1>779</h1></div>
+            </div>
+            <p>per user / year</p>
+            <h4>Flexibility and advanced
+                analytics for the enterprise.</h4>
+             <div><button id="btn4">CONTACT SALES</button></div>
+        </div>
+    </div>
+        <div id="prnt"><h4>*All per-user products require an annual contract.</h4></div>
+        <div id="flip">
+            <div id="fli">
+              <div id="fl"> 
+                  <h4>KNOW WHAT YOU'RE GETTING</h4>
+                  <h1>A few frequently
+                    asked questions</h1>
+              </div>
+            </div>
+            <div id="flp">
+                <div id="f1"> <h2>Will I be charged now for the Pluralsight Skills professional team free trial?</h2></div>
+               <div id="f1b"><h2>Do you offer a pilot for Pluralsight Skills enterprise business plans?</h2></div>
+               <div id="f1c"><h2>What's the cost of a Pluralsight Skills business plan?</h2></div>
+               <div id="f1d"><h2>How many licenses should I purchase for my plan?</h2></div>
+               <div id="f1e"><h2>Do you offer volume pricing?</h2></div>
+            </div>
+            <div id="fp">
+                <div id="f2"><h2>+</h2></div>
+                <div id="f2b"> <h2>+</h2></div>
+                <div id="f2c"><h2>+</h2></div>
+                <div id="f2d"><h2>+</h2></div>
+                <div id="f2e"><h2>+</h2></div>
+            </div>
+        </div>
+        <div id="end">
+            <div id="mob">
+                <div id="mo"><h2>Power the people who
+                    power your product</h2></div>
+                  <div id="btn6"><button id="btn6a">TRY FOR FREE</button></div>  
+            </div>
+            <div id="mobb">
+                <div id="mb"><h2>Are you an individual
+                    looking for Skills?</h2></div>
+                    <div id="btn7"><button style="border: transparent;" id="btn7a">SKILLS FOR INDIVIDUAL</button></div>
+            </div>
+        </div>
+ </div>
+</div>
+</body>
+</html>
