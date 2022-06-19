@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #firstcon{
+            margin: 0px; padding: 0px;
+            width: 100%;
+            display: flex;
+            background-color: black;
+            padding-top: 5%;
+            background-repeat: no-repeat;
+        }
+        #firstcon>div{
+            width: 100%;
+            margin: auto;
+            display: grid;
+            /* margin-top: -40%; */
+            text-align: flex;
+        }
+        #background{
+            width: 50%;
+            height: 600px;
+            display: flex;
+            margin-left: 50%;
+            margin-top: -438px;
+            /* border: 1px solid red; */
+        }
+        #firstcon>div>h2{
+            width: 40%;
+            color: white;
+            font-size: 50px;
+        }
+        #firstcon>div>p{
+            width: 30%;
+            line-height: 90%;
+            color: white;
+            font-size: 30px;
+        }
+        #para{
+            color: #EEEEEE;
+            font-size: 20px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 40px;
+        }
+        button{
+            width: 15%;
+            font-size: 20px;
+            
+            color: #EEEEEE;
+            background-color: #0084BD;
+            
+        }
+        #avatar{     
+            width: 100%;
+            height: 700px;
+            display: grid;           
+        }
+        #secondcon{
+            background-color: rgb(12, 12, 12);
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,auto);
+            /* display: grid; */
+        }
+        #secondcon>div>h2{
+            color: #0084BD;
+            padding-left: 15%;
+        }
+        #secondcon>div>h1{
+            color: white;
+            text-align: center;
+            font-size: 280%;
+        }
+        #secondcon>div>p{
+            color: white;
+            text-align: center;
+            padding-right: 22%;
+            font-size: 25px;
+        }
+        #secondcon>div{
+            padding-top: 20%;
+        }
+        #secdiv>h2{
+            color: #0084BD;
+            text-align: center;
+            margin-right: 40%;
+        }
+        #secdiv>h1{
+            margin-right: 15%;
+        }
+        #secdiv>p{
+            text-align: center;
+            margin-right: 6%;
+        }
+        #secdiv>h3{
+            color: white;
+            font-size: 25px;
+            padding-left: 20%;
+        }
+        #thirddiv>h2{
+            color: blue;
+        }
+        #thirddiv>h1{
+            padding-right: 14%;
+        }
+        #thirddiv>p{
+            margin-right: 15%;
+        }
+        #thirdcon{
+            height: 800px;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        #thirdcon>div>a{
+            margin: auto;
+            margin-left: 15%;
+            align-items: center;
+        }
+        #thirdcon>div>h2{
+            width: 40%;
+            font-size: 40px;
+            color: #0084BD;
+            text-align: center;
+            margin: 0px 0px 40px;
+        }
+        #thirdcon>div>h1{
+            width: 95%;
+            color: white;
+            font: 84px "PS Commons Bold";
+            /* margin: 0px 0px 20px; */
+            margin-left: 3%;
+            text-align: start;
+        }
+        #bag>h1+p{
+            width: 90%;
+            color: white;
+            font: 30px "PS Commons";
+            line-height: 40px;
+            padding: 10px;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+        }
+        #b1{
+            width: 60%;
+            font-size: 30px;
+            color: #EEEEEE;
+            display: flex;
+            margin: auto;
+            text-align: center;
+            gap: 120px;
+        }
+        #thirdcon>div{
+            width: 60%;
+            margin: auto;
+        }
+        #fourthcon{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,auto);
+            background-color: rgb(12, 12, 12);
+        }
+        #fourthcon>div>h1{
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            margin-right: 45%;
+            
+        }
+        #leaders>p{
+            color: #EEEEEE;
+            margin-right: 5%;
+            font-size: 40px;
+        }
+        #fifthcon{
+            margin: auto;
+            text-align: center;
+            background-image: url(https://www.pluralsight.com/content/experience-fragments/pluralsight/trust_badges/flow-industry-standard/flow-industry-standard/jcr:content/root/generic_block_119848/image-res.img.89d93850-7325-41d6-9ff7-c690bd3d728a.jpg);
+        }
+        #fifthcon h1{
+            color: #0084BD;
+        }
+        #fifthcon p{
+            width: 40%;
+            margin: auto;
+            font-size: 50px ;
+            color: #EEEEEE;
+        }
+        #jhola{
+            background-color: #EEEEEE;
+            height: 700px;
+            display: grid;
+            font: 14px"ps commons";
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,auto);
+            margin: auto;
+            justify-items: center;
+            background-image: url(https://www.pluralsight.com/content/experience-fragments/pluralsight/trust_badges/flow-industry-standard/flow-industry-standard/jcr:content/root/generic_block_119848/image-res.img.89d93850-7325-41d6-9ff7-c690bd3d728a.jpg);
+        }
+        #view{
+           width: 300%;
+           color: #0084BD;
+           margin: auto;
+           text-align: center;
+           justify-content: center;
+           align-items: center;
+           margin-right: 20%;
+        }
+        .sec{
+            font: 34px"PS Commons Bold";
+            display: flex;
+        }
+        #sixthcon{
+            height: 700px;
+            margin: auto;
+            text-align: center;
+            display: grid;   
+            background-color: #000000;
+            padding: 50px 0px;
+        }
+        #sixthcon>h2{
+            color: #0084BD;
+        }
+        #sixthcon>h1{
+            color: #EEEEEE;
+            font: 60px "PS Commons Bold";
+        }
+        #sixthcon>p{
+            width: 40%;
+            margin: 0px 0px 20px;
+            margin: auto;
+            margin-top: -2%;
+            font: 27px "PS Commons";
+            color: #EEEEEE;
+        }
+        #sixthcon>div{
+            display: flex;
+            padding-top: 5%;
+        }
+        .teddy{
+           width: 400px;
+           height: 450px;
+           display: flex;
+           flex-direction: column;
+           margin-top: -6%;
+           text-align: center;
+           background-image: url(https://www.pluralsight.com/content/pluralsight/en/customer-stories/business/KAR-Global-Building-elite-software-developer-team-Pluralsight-Flow/jcr:content/bg-image.img.fe015b23-fa65-48f7-97d1-358a6e718ea7.jpg);
+        }
+        .teddy>p{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .karflow{
+            width: 80px;
+            margin: auto;
+        }
+        #threebox{
+            width: 1400px;
+            height: 400px;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            margin-top: -20px;
+            margin: auto;
+        }
+        .inner{
+            padding-bottom: 60px;
+            height: 100;
+        }
+        .bear{
+            background-color: #222222;
+            height: 150px;
+            color: #EEEEEE;
+            font-size: 23px ;
+        }
+        #seventhcon{
+            display: flex;
+            background-color: #181818;
+        }
+        #seventhcon>div{
+            justify-content: space-between;
+            padding: 30px;
+        }
+        #seventhcon>div>img{
+            width: 90%;
+        }
+        #seventhcon>div>p{
+            width: 90%;
+            color: #AAAAAA;
+            font: 30px"PS Commons";
+        }
+        .table{
+            width: 90%;
+            height: 300px;
+            background-color: #222222;
+        }
+        .table p{
+            font-size: 25px;
+            text-align: center;
+            color: #EEEEEE;
+        }
+        .table h2{
+            font-size: 30px;
+            justify-content: space-between;
+           text-align: center;
+        }
+        #signup{
+            background-color: #181818;
+            display: grid;
+            
+        }
+        #signup>div>h1{
+            width: 90%;
+            color: #EEEEEE;
+            text-align: center;
+            justify-content: space-between;
+            font-size: 50px;
+            line-height: 40px;
+        }
+        #signup>p{
+            font-size: 25px;
+            color: #EEEEEE;
+            text-align: center;
+            margin-right: 53%;
+        }
+        #signin{
+            width: 40%;
+            height: 300px;
+            display: grid;
+            margin: auto;
+            margin-left: 10%;
+            margin-top: 8%;
+        }
+        #mainpara{
+            width: 90%;
+            color: #EEEEEE;
+            font-size: 30px;
+            text-align: center;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+            margin-bottom: 10%;
+            gap: 10px
+            ;
+        }
+        #mainpara+p{
+            width: 30%;
+            font-size: 20px;
+            color: #EEEEEE;
+            margin-top: -3%;
+            text-align: center;
+        }
+        #email{
+            display: flex;
+            width: 50%;
+            margin: auto;
+            height: 50px;
+            margin-right: 35%;
+            gap: 20px;
+        }
+        #email input{
+           width: 50%;
+           height: 70px;
+        }
+        #barhead{
+            background-color: #222222;
+        }
+        #links{
+            text-align: left;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #222222;
+            padding-top: 80px;
+        }
+        li{
+            color: grey;
+            padding-bottom: 15px;
+            font-size: 16px;
+        }
+        #langauge{
+            background-color: #222222;
+        }
+        .different{
+            display: flex;
+            gap: 20px;
+            padding-left: 60px;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            color: #EEEEEE;
+        }
+        #final{
+            display: flex;
+            padding-left: 55px;
+            margin-top: 5px;
+            gap: 15px;
+        }
+        #final h6{
+            color: #EEEEEE;
+            font-size: 20px;
+            padding-left: 30px;
+            padding-right: 5px;
+        }
+        #final p{
+            width: 30%;
+            display: flex;
+            font-size: 24px;
+        }
+        #final img{
+            width: 30px;
+            display: flex;
+            gap: 100px;
+        }
+        #engineers>p{
+            color: #EEEEEE;
+            font-size: 40px;
+        }
+        #excutives>p{
+
+            color: #EEEEEE;
+            font-size: 40px;
+        }
+        
+        
+         
+
+    </style>
+</head>
+<body>
+    <div id="firstcon">
+        <div>
+            <img src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block/parsys/columns/column-parsys-2/image/image-res.img.1471de04-2349-4d01-9fea-278683459043.png" alt="">
+            <h2>The Software Delivery Intilligence Platform</h2>
+            <p>Optimize software delivery with actionable
+                insights from your code repos and agile tools.</p>
+                <div id="para">
+                    <button>Take A Tour</button>
+                    <p> Contact Sales> </p>
+                </div>
+                <div>
+                    <img id="background" src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block/image-res.img.ddcfcbe3-f8d3-463f-bf06-53c24a0f6948.png" alt="">
+                </div>
+        </div>
+        
+        <!-- <img id="avatar" src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block/image-res.img.ddcfcbe3-f8d3-463f-bf06-53c24a0f6948.png" alt=""> -->
+
+        
+    </div>
+    <div id="secondcon">
+        <div>
+           <h2>RETROSPECTIVE</h2>
+           <h1>Increase product delivery speed</h1>
+           <p>Identify bottlenecks and developer friction</p>
+           <p>Improve flow efficiency and deployment</p>
+           <p>Build healthy development patterns</p> 
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block_2045168047/parsys/columns/column-parsys-2/generic_block/parsys/image/image-res.img.dc709956-2c41-4581-ba71-f07327e12663.png" alt="">
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/new-lp-assets/review%20collaboration.png" alt="">
+        </div>
+        <div id="secdiv">
+            <h2>REVIEW COLLABORATION</h2>
+            <h1>Build a thriving team</h1>
+            <h3>Improve knowledge sharing and collaboration</h3>
+            <p>Coach and develop engineers</p>
+            <p>Reduce onboarding ramp time</p>
+            <p>Lead inclusively and objectively</p>
+        </div>
+        <div id="thirddiv">
+            <h2>CODE FUNDAMENTALS</h2>
+            <h1>Drive strategic alignment</h1>
+            <p>Standardize healthy practices</p>
+            <p>Verify third-party contract work</p>
+            <p>Evaluate investment decisions</p>
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block_2045168047/parsys/columns_copy/column-parsys-2/generic_block/parsys/image/image-res.img.d3ac613a-5d7d-4dfd-9526-b5d97f26f44b.png" alt="">
+        </div>
+    </div>
+    <div id="thirdcon">
+        <div>
+            <a href="https://www.youtube.com/embed/OIvfFEsjf4w?autoplay=1&hd=1&rel=0&autohide=1&modestbranding=1&iv_load_policy=3"><img src="https://www.pluralsight.com/content/pluralsight/en/product/flow/jcr:content/main/generic_block_855088985/parsys/columns_copy_1209930/column-parsys-1/generic_block/parsys/image/image-res.img.9726f101-7bec-49b6-9fe2-2fe5a63d9e72.png" alt=""></a>
+
+        </div>
+        <div id="bag">
+            <h2>OVERVIEW</h2>
+            <h1>See your team like never before</h1>
+            <p>Flow gives you unmatched visibility into your team’s workflow patterns so you can identify bottlenecks, compare trends and help your team be as effective as possible.</p>
+           <div id="b1">
+            <p >View Flow Demo</p>
+            <p > What Is Flow</p>
+           </div>
+        </div>
+    </div>
+    <div id="fourthcon">
+       
+        <div id="engineers">
+            <h1>Engineers</h1>
+            <p>Spend less time on status updates and more time discussing strategy, advocating for your ideas and talking about your career. </p>
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/new-lp-assets/Check%20In%201%20(1).png" alt="">
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Check%20In%201.png" alt="">
+        </div>
+        <div id="leaders">
+            <h1>Leaders</h1>
+            <p>Improve team patterns, identify over-burdened or blocked engineers, recognize hidden talent and know where you can best help your team grow.</p>
+        </div>
+        <div id="excutives">
+            <h1>Excutives</h1>
+            <p>Understand the impact that systemic changes—like agile adoptions, remote work, mergers and acquisitions—have on your business. </p>
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Check%20In%202.png" alt="">
+        </div>
+    </div>
+    <div id="fifthcon">
+        
+        <h1>Industry Standard</h1>
+        <p>Loved by startups.</p>
+        <p>Trusted by enterprices</p>
+        
+        
+        <div id="jhola">
+            <div>
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Manulife.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Cigna_white.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Cox_automotive_white.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/KAR.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Thomson_reuters_white.png" alt="">
+            </div>
+            <div>
+                <img src="https://www.pluralsight.com/content/dam/pluralsight2/flow-demo-assets/landing-page-logos/Rally_white.png" alt="">
+            </div>
+            <div id="view" >
+                <button>View plans</button>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    </div>
+    <div id="sixthcon">
+        <h2>CUSTOMER STORIES</h2>
+        <h1>See the difference Flow can make</h1>
+        <p>Hear from some of our customers </p>
+
+        <div id="threebox">
+        <div class="teddy">
+            <img class="karflow" src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/flow-logo-shadow.png" alt="">
+            <img class="inner" src="https://www.pluralsight.com/content/pluralsight/en/customer-stories/business/KAR-Global-Building-elite-software-developer-team-Pluralsight-Flow/_jcr_content/logo-image.img.c868b7c2-0622-46a2-8569-cb7913e094a4.png" alt="">
+           <div class="bear">
+               <p>Building an elite software developer team with pluralsight Flow</p>
+               <p>View the story</p>
+           </div>
+        </div>
+        <div class="teddy">
+            <img class="karflow" src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/flow-logo-shadow.png" alt="">
+            <img class="inner" src="https://www.pluralsight.com/content/pluralsight/en/customer-stories/business/manulife/_jcr_content/logo-image.img.aa8d577e-0726-4b5c-858d-52ba94b2b4f6.png" alt="">
+            <div class="bear">
+
+                <p>Empowering best-in-class engineering teams to ship better products for customers</p>
+                <p>View the story</p>
+            </div>
+        </div>
+        <div class="teddy">
+            <img class="karflow" src="https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/flow-logo-shadow.png" alt="">
+            <img class="inner" src="https://www.pluralsight.com/content/pluralsight/en/customer-stories/business/workfront/_jcr_content/logo-image.img.f23e76fa-e6cb-4884-801a-c2105c3f1448.png" alt="">
+            <div class="bear">
+                <p>From monolith to microservices with pluralsight Flow</p>
+                <p>View the story</p>
+            </div>
+        </div>
+        </div>
+        </div>
+    <div id="seventhcon">
+        <!-- <h1>Related Blogs</h1> -->
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/b2b-blog-files/EquippingYourTeamToSupportJuniorDevelopers-Hub-OnDemand.png" alt="">
+            <div class="table">
+                <h3 style="color: #EC008c;">Article</h3>
+                <h2 style="color: #EEEEEE;">On-demand webinar:Equip your team to sopport junior developers </h2>
+                <p>Adding new talent to your team? Equip yourself, your team, and your organisation with junior-inclusive practices too...</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/b2b-blog-files/Improve-collaboration-through-collaboration.jpg" alt="">
+            <div class="table">
+                <h3 style="color: #EC008c;">Article</h3>
+                <h2  style="color: #EEEEEE;">Software developers:stop collaborate and listen</h2>
+                <p>Pluralsight Flow lets engineering leaders see data on collaboration,improve developer satisfaction and retention and...</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/b2b-blog-files/How-ps-uses-flow.jpg" alt="">
+            <div class="table">
+                <h3 style="color: #EC008c;">Article</h3>
+                <h2 i style="color: #EEEEEE;">How to reduce queue time from 118 to 23 hours under a year</h2>
+            <p>Learn how to pluralsight Flow team used our engineering insights tool to reduce queue time from 118 to 23 hours in...</p>
+            </div>
+        </div>
+    </div>
+    <div id="signup">
+        <div id="signin">
+        <h1>Sign up for engineering
+            impact newsletter</h1>
+        <p id="mainpara">Get valuable insights on engineering leadership with curated articles from leading experts.</p>
+        <p>Email*</p>
+        </div>
+        <div id="email">
+            <input type="text" name="Email">
+            <button>Submit</button>
+        </div>
+        <p>Your <a href="https://www.pluralsight.com/privacy" target="_blank">privacy</a> is important to us.</p>
+    </div>
+    <div id="barhead">
+        <div id="links">
+            <div>
+                <h4 style="padding-left:36px ;">SOLUTIONS</h4>
+                <ul style="list-style-type:none;">
+                    <li>Pluralsight Skills</li>
+                    <li>Pluralsight Flow</li>
+                    <li>Government</li>
+                    <li>Gift of Pluralsight</li>
+                    <li>View Pricing</li>
+                    <li>Contact Sales</li>
+                    <li>Skill up for free</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="padding-left:36px ;">PLATFORM</h4>
+                <ul style="list-style-type: none;">
+                    <li>Browse library</li>
+                    <li>Role IQ</li>
+                    <li>Skill IQ</li>
+                    <li>Iris</li>
+                    <li>Authors</li>
+                    <li>Professional Services</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="padding-left: 36px;">COMPANY</h4>
+                <ul style="list-style-type: none;">
+                    <li>About us</li>
+                    <li>Customer stories</li>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                    <li>Newsroom</li>
+                    <li>Resource center</li>
+                    <li>Guides</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="padding-left: 36px;">RESOURCES</h4>
+                <ul style="list-style-type: none;">
+                    <li>Download Pluralsight</li>
+                    <li>Events</li>
+                    <li>Teach</li>
+                    <li>Parteners</li>
+                    <li>Affiliate parteners</li>
+                    <li>Pluralsightone.org</li>
+                    <li>Subscribe</li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="padding-left: 36px;">SUPPORT</h4>
+                <ul style="list-style-type: none;">
+                    <li>Contact</li>
+                    <li>Help center</li>
+                    <li>IP allowlist</li>
+                    <li>Sitemap</li>
+                </ul>
+            </div>
+        </div>
+        <div id="langauge">
+            <hr style="width: 90%;color:grey;">
+            <div class="different">
+                <img style="width: 30px;height:30px;padding-top:5px;" src="https://www.pluralsight.com/content/dam/pluralsight2/icons/globe-white.png" alt="">
+                <p>Deutsch</p><p>English</p><p>French</p>
+            </div>
+            <hr style="width: 90%;color:grey;">
+        </div>
+        <div id="final">
+            <img style="width: 40px;height:40px;padding: top 15px;" src="https://www.pluralsight.com/content/dam/pluralsight2/general/icons/light/ps-icon.png" alt="">
+            <p style="color: grey;">Copyright  2004 - 2022 Pluralsight LLC. All rights reserved.</p>
+            <h6>Terms of use</h6><h6>Privacy Notice</h6><h6>Modern Slavery Act Transparency Statement</h6>
+            <img src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/icons/desktop/Facebook_Icon.svg" alt="">
+            <img src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/icons/desktop/Instagram_Icon.svg" alt="">
+            <img src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/icons/desktop/Twitter_Icon.svg" alt="">
+            <img src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/icons/desktop/LinkedIn_Icon.svg" alt="">
+            <img src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/icons/desktop/YouTube_Icon.svg" alt="">
+        </div>
+    </div>  
+</body>
+</html>
