@@ -1,0 +1,311 @@
+body{
+    background-color: black;
+}
+*{
+    color: white;
+}
+#navbar{
+    display: flex;
+    gap: 25px;
+    background-color: #222222;
+    color: white;
+    height: 100px;
+top: 0;
+    position: fixed;
+width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+#line{
+    border-left: 1px solid white;
+    height: 9vh;
+    left: 50%;
+}
+#logo{
+margin-left: 30px;
+}
+.pic{
+    height: 30px;
+    border: none;
+    
+    
+}
+.ss{
+    background-color: #222222;
+    border: transparent;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#main{
+    height: 450px;
+    width: 100%;
+    margin-top: 100px;
+    background-image: url(https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/hero-illustration.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#back{
+    width: 1200px;
+}
+.line2{
+    width: 100px;
+    display: flex;
+    height: 50px;
+    margin-left: 550px;
+    margin-top: 20px;
+}
+.line2 img{
+    height: 250px;
+    width: 150px;
+}
+#text{
+    color: white;
+    padding-top: 200px;
+    display: grid;
+    font-family: monospace;
+
+}
+#text h1:after{
+content:'teams';
+animation: text 15s infinite;
+}
+@keyframes text{
+    25%{
+        content: "processes";
+    }
+    50%{
+        content: "Products";
+    }
+    75%{
+        content: "Skills";
+    }
+    100%{
+        content: "WorkFlow";
+    }
+}
+#but{
+    color: white;
+    display: flex;
+    padding-top: 20px;
+    font-weight: bold;
+    justify-content: center;
+    gap: 40px;
+}
+#butt{
+    border: 1px solid transparent;
+    height: 35px;
+    padding-top: 15px;
+    width: 180px;
+    background-image: linear-gradient(to right,#ef5230,#ed2463);
+}
+#butt2{
+    border: 1px solid white;
+    height: 35px;
+    padding-top: 15px;
+    width: 180px;
+}
+#in{
+    text-align: center;
+    font-size: 12px;
+}
+#pics{
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+}
+.pro{
+    height: 25px;
+}
+#trend{
+    margin-top: 200px;
+}
+#pop{
+    display: grid;
+    grid-template-columns: repeat(2,450px);
+    grid-template-rows: repeat(2,150px);
+    gap: 50px;
+    padding-left: 22px;
+    justify-content: center;
+}
+.box{
+    /* border: 1px solid yellow; */
+    border-radius: 10px;
+    padding-left: 30px;
+    background-color: #222222;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.pa{
+    color: #e40084;
+    font-weight: bold;
+}
+.im{
+    display: flex;
+    height: 30px;
+}
+#see{
+    margin-top: 200px;
+    background-color: black;
+}
+#sk{
+    display: flex;
+    height: 50px;
+    border: 1px orange;
+}
+#res{
+    width: 1150px;
+    height: 400px;
+    background-color: 
+    #222222;
+    /* border: 2px solid black; */
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: start;
+    font-size: 17px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding-left: 10px;
+}
+#big{
+    width: 620px;
+    height: 395px;
+    /* border: 2px solid yellow; */
+    margin-left: 230px;
+    border-radius: 10px;
+}
+#card{
+    display: grid;
+    grid-template-columns: repeat(3,370px);
+    grid-template-rows: auto;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cd{
+    background-color: #222222;
+    border-radius: 20px;
+    height: 530px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.cd>h1{
+    font-size: 36px;
+}
+.cd>p{
+    font-size: 21px;
+}
+#upd{
+        margin-top:200px;
+    }
+#allups{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.ups h2{
+font-size: 17px;
+color: #ffba0e;
+}
+.ups p{
+font-size: 19px;
+}
+.photo{
+    width: 290px;
+    border-radius: 20px;
+}
+#cage{
+    margin-top: 100px;
+    display: flex;
+}
+.la{
+    width: 500px;
+    background-image: linear-gradient(to right,#ec0980,#f04c32);
+    padding-left: 20px;
+}
+.la h1{
+    font-size: 30px;
+}
+#follow{
+    text-align: center;
+    margin-top: 100px;
+}
+#follow h4{
+    color: #e40084;
+}
+.you{
+    display: flex;
+    background-color: #181818;
+    height: 150px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+.you h1{
+    font-size: 39px;
+}
+.youin{
+background-image: linear-gradient(to right,#ec0980,#f04c32);
+height: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 240px;
+margin-top: 32px;
+margin-left: 340px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+font-weight: bold;
+border: 1px solid;
+}
+#whlist{
+    background-color: #222222;
+}
+#list{
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222222;
+    padding-top: 80px;
+}
+li{
+    color: grey;
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+#lang{
+    background-color: #222222;   
+
+}
+.bhasa{
+    display: flex;
+    gap: 20px;
+    padding-left:55px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+#akhri{
+    display: flex;
+    padding-left: 55px;
+    margin-top: 5px;
+    gap: 15px;
+}
+#akhri h6{
+    padding-left:30px ;
+    padding-right: 5px;
+}
+#akhri p{
+    font-size: 12px;
+    padding-top: 15px;
+    padding-right: 40px;
+}
+.log{
+    width: 17px;
+    padding-left: 10px;
+}
